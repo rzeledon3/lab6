@@ -19,7 +19,12 @@ def encoder(password):
 
 # option 2 which creates the decoder
 def decoder(password):
-    pass
+    decoded_list = []
+    for num in password:
+        new_num = int(num) - 3
+        decoded_list.append(new_num)
+    return decoded_list
+
 
 
 # program while loop to continue it going
